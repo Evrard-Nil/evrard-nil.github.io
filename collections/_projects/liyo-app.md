@@ -1,7 +1,7 @@
 ---
 layout: page
 menus: header
-title: profile Pic rater
-thumbnail: devlopr.png
+title: liyo
+thumbnail: liyo.jpeg
 ---
 <h1>Profile Pics</h1>
