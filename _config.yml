@@ -28,7 +28,7 @@ author_location: France
 
 author_work_experiences:
   - company_name: Sopra Steria
-    company_logo: google.png
+    company_logo: soprasteria.png
     company_url: https://www.soprasteria.com/en
     designation: Software Engineer Apprentice
     slug: sopra-steria
@@ -36,7 +36,7 @@ author_work_experiences:
     description: Worked for High Availability service.
     visibility: true
   - company_name: S2E
-    company_logo: microsoft.png
+    company_logo: sg.png
     company_url: http://www.s2e-services-epargne-entreprise.com/
     designation: Software Engineer Intern
     slug: s2e
@@ -44,7 +44,7 @@ author_work_experiences:
     visibility: true
 
 author_education_details:
-  - college_logo: mit.png
+  - college_logo: imt.png
     college_name: IMT Atlantique
     college_url: https://www.imt-atlantique.fr/en
     college_degree: Software Engineering
@@ -53,33 +53,44 @@ author_education_details:
 
 author_project_details:
   - project_thumbnail: gamershub.png
-    project_slug: profile-pic-rater
-    project_title: Profile Picture Rater
-    project_description: Built a micro-services backend and mobile application for learning purposes.
+    project_slug: liyo-app
+    project_info: Personal
+    project_title: "Mobile application: liyo"
+    project_description: Built a micro-services backend and mobile application using Kubernetes, Go, Dart and more.
     project_url: https://github.com/evrard-nil/pic-rater
     visibility: true
   - project_thumbnail: programmingebooks.png
+    project_slug: weather-data-collection
+    project_title: Weather data collector
+    project_description: Developped a weather data collector using Golang and an MQTT broker.
+    project_url: https://github.com/Evrard-Nil/middleware
+    visibility: true
+  - project_thumbnail: programmingebooks.png
     project_slug: note-taker
+    project_info: Personal
     project_title: Note Taker
-    project_description: Developped a small mobile application allowing user to create notes using markdown.
+    project_description: Developped a small mobile application allowing users to create notes using markdown.
     project_url: https://programmingebooks.com
     visibility: true
   - project_thumbnail: programmingebooks.png
     project_slug: green-it-study
+    project_info: Scholar
     project_title: Green IT study
     project_description: Studied how service design could impact ressource usage inside a micro-services environment.
     project_url: https://programmingebooks.com
     visibility: true
   - project_thumbnail: programmingebooks.png
     project_slug: mentorship
+    project_info: Personal
     project_title: Mentorship
     project_description: Taught first-year student students about Math, Physics, Mecanics or Computer Science.
     project_url: https://programmingebooks.com
     visibility: true
   - project_thumbnail: programmingebooks.png
     project_slug: scout-leader
+    project_info: Personal
     project_title: Scout Leader
-    project_description: Lead a team of 6 to 8 scouts during 2 years. Organised activities.
+    project_description: Lead a team of 6 to 8 scouts during 2 years. Organised, planned and budgeted activities.
     project_url: https://programmingebooks.com
     visibility: true
 
