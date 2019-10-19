@@ -1,10 +1,10 @@
 title: Evrard-Nil Daillet
 subtitle: Software Engineer Apprentice
-description: >- # this means to ignore newlines until "baseurl:"
-  devlopr-jekyll is a Jekyll Theme Built For Developers
+description: >-
+  Evrard-Nil Daillet's Personal Website
 
-url: "https://evrard-nil.github.io" # the base hostname & protocol for your site, e.g. https://example.github.io
-baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://evrard-nil.github.io"
+baseurl: ""
 
 urls:
   - text: About Me
@@ -18,13 +18,11 @@ urls:
   # - text: Styleguide
   #   url: /styleguide/
 
-# Edit these details
-
 author_logo: profile.png
 author: Evrard-Nil Daillet
-author_bio: Hi, my name is Evrard-Nil Daillet. I am a french student, currently in fourth year of Software Engineer's Degree at <a href = "https://www.imt-atlantique.fr/fr">'Institut Mines-Telecom Atlantique'</a>. I am seeking an intership starting in May 2020, for 9 to 14 weeks.
+author_bio: Hi, my name is Evrard-Nil Daillet. I am a french student, currently in fourth year of Software Engineer's Degree at <a href = "https://www.imt-atlantique.fr/fr">'Institut Mines-Telecom Atlantique'</a>. I am seeking an intership starting in May 2020, for 9 to 14 weeks.<br> I love to play around with new technologies and software, feel free to browse some of my projects below.
 author_email: "evrard-nil.daillet@gmail.com"
-author_location: France
+author_location: Nantes, France
 
 author_work_experiences:
   - company_name: Sopra Steria
@@ -33,14 +31,14 @@ author_work_experiences:
     designation: Software Engineer Apprentice
     slug: sopra-steria
     Leveraged skills: Python, Saltstack, Unix, Networks, Infrastructure Management.
-    description: Worked for High Availability service.
+    description: Helped to build and maintain an infrastructure management solution for the CNAM (french institution) using SaltStack.<br> Developed  a  solution  testing  the  deployment  of  an  application  inside  dynamically created containers automatically allowing to decrease testing time by 50%.
     visibility: true
-  - company_name: S2E
+  - company_name: S2E (Société Générale subsidiary)
     company_logo: sg.png
     company_url: http://www.s2e-services-epargne-entreprise.com/
     designation: Software Engineer Intern
     slug: s2e
-    description: Developped predictive AI model to better anticipate risky or capability period in banking environment.
+    description: Developped predictive AI model to better anticipate risky or safe period in banking environment.
     visibility: true
 
 author_education_details:
@@ -51,18 +49,19 @@ author_education_details:
     description: Master of Science
     visibility: true
 
-author_project_details:
+author_software_project_details:
   - project_thumbnail: gamershub.png
     project_slug: liyo-app
     project_info: Personal
-    project_title: "Mobile application: liyo"
+    project_title: "Profile Picture Adviser"
     project_description: Built a micro-services backend and mobile application using Kubernetes, Go, Dart and more.
     project_url: https://github.com/evrard-nil/pic-rater
     visibility: true
   - project_thumbnail: programmingebooks.png
     project_slug: weather-data-collection
+    project_info: Scholar
     project_title: Weather data collector
-    project_description: Developped a weather data collector using Golang and an MQTT broker.
+    project_description: Developped a weather data collector using Golang and an MQTT broker (publish-subscribe pattern).
     project_url: https://github.com/Evrard-Nil/middleware
     visibility: true
   - project_thumbnail: programmingebooks.png
@@ -79,6 +78,8 @@ author_project_details:
     project_description: Studied how service design could impact ressource usage inside a micro-services environment.
     project_url: https://programmingebooks.com
     visibility: true
+
+author_add_expereience_details:
   - project_thumbnail: programmingebooks.png
     project_slug: mentorship
     project_info: Personal
@@ -94,18 +95,9 @@ author_project_details:
     project_url: https://programmingebooks.com
     visibility: true
 
-# social links
 github_username: evrard-nil
 linkedin_username: endaillet
-
-#for comments using disqus
-# disqus_shortname: sujay-kundu
-
-# wakatime username (coding activity)
 wakatime_username: Evrard
-
-# formspree (contact form)
-# formspree_email: johndoe@gmail.com
 
 # syntax highlighter
 markdown: kramdown
@@ -115,24 +107,20 @@ permalink: pretty
 # google analytics
 # google_analytics: UA-46783401-10
 
-# Choose what to show ( can be true or false)
 show_author_work_experiences: true
 show_author_education_details: true
 show_author_project_details: true
 
-# dont touch this unless required
 plugins:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# pagination of posts
 paginate: 8
 per_page: 4
 paginate_path: "/blog/page/:num/"
 
-# minify
 compress_html:
   clippings: all
   comments: ["<!-- ", " -->"]
@@ -148,22 +136,6 @@ collections:
   projects:
     output: True
     permalink: /:collection/:title
-# Archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#   layout: archive
-#   permalinks:
-#     category: '/category/:name/'
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
 # exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/

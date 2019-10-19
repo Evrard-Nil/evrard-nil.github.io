@@ -9,6 +9,7 @@ layout: default
         <div class="card">
             <h1 class="card-title">About</h1>
             <p> {{ site.author_bio }}</p>
+            <p> This blog aims to share about projects and experience I had.</p>
         </div>
         {% endif %}
 
@@ -17,7 +18,7 @@ layout: default
         <div class="card">
             <h1 class="card-title">Projects</h1>
             <br />
-            {% for project in site.author_project_details %}
+            {% for project in site.author_software_project_details %}
             {% if project.visibility == true %}
             <div class="row">
                 <div class="col-md-2">
@@ -26,7 +27,7 @@ layout: default
                 <div class="col-md-10">
                     <h4 class="experience-title"><a href="/projects/{{ project.project_slug }}">
                             {{ project.project_title }}</a></h4>
-                    <h6 class="experience-info"> {{ project.project_info}}</h6>
+                    <h6 class="experience-info"> <em>{{ project.project_info}} </em></h6>
                     <p class="experience-desc"> {{ project.project_description }} </p>
                     <!-- <p><a href="{{exp.company_url}}">{{ project.project_url}}</a></p> -->
                 </div>
@@ -48,8 +49,9 @@ layout: default
                     <img src="/assets/img/{{ exp.company_logo }}" class="company-logo" />
                 </div>
                 <div class="col-md-10">
-                    <h4 class="experience-title"><a href="/experience/{{ exp.slug }}"> {{ exp.designation }}</a></h4>
-                    <h6 class="experience-info"> {{ exp.company_name}}</h6>
+                    <h4 class="experience-title"><a class="test" href="/experience/{{ exp.slug }}">
+                            {{ exp.designation }}</a></h4>
+                    <h6 class="experience-info"> <em>{{ exp.company_name}}</em></h6>
                     <p class="experience-desc"> {{ exp.description }} </p>
                     <p><a href="{{exp.company_url}}">{{ exp.company_url}}</a></p>
                 </div>
@@ -59,7 +61,27 @@ layout: default
             {% endfor %}
         </div>
         {% endif %}
+        <div class="card">
+            <h1 class="card-title">Additionnal Experience</h1>
+            <br />
+            {% for project in site.author_add_expereience_details %}
+            {% if project.visibility == true %}
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="/assets/img/{{project.project_thumbnail}}" class="company-logo" />
+                </div>
+                <div class="col-md-10">
+                    <h4 class="experience-title"><a href="/projects/{{ project.project_slug }}">
+                            {{ project.project_title }}</a></h4>
+                    <h6 class="experience-info"> <em>{{ project.project_info}} </em></h6>
+                    <p class="experience-desc"> {{ project.project_description }} </p>
+                    <!-- <p><a href="{{exp.company_url}}">{{ project.project_url}}</a></p> -->
+                </div>
+            </div>
+            {% endif %}
 
+            {% endfor %}
+        </div>
 
         {% if site.show_author_education_details == true %}
         <div class="card">
@@ -107,14 +129,6 @@ layout: default
             {% if site.twitter_username %}
             {%- include twitter_follow_button.html -%}
             {% endif %}
-
-        </div>
-
-        <div class="card">
-            <h1> Skills </h1>
-
-            {%- include author_skills.html -%}
-
         </div>
 
         {% if site.wakatime_username %}
