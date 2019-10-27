@@ -8,13 +8,13 @@ baseurl: ""
 
 urls:
   - text: About Me
-    url: /about/
+    url: /about
   - text: Projects
     url: /projects
   # - text: Experience
   #   url: /experience
   - text: Contact Me
-    url: /contact/
+    url: /contact
   # - text: Styleguide
   #   url: /styleguide/
 
