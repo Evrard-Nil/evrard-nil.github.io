@@ -11,8 +11,8 @@ urls:
     url: /about/
   - text: Projects
     url: /projects
-  - text: Experience
-    url: /experience
+  # - text: Experience
+  #   url: /experience
   - text: Contact Me
     url: /contact/
   # - text: Styleguide
@@ -38,62 +38,83 @@ author_work_experiences:
     company_url: http://www.s2e-services-epargne-entreprise.com/
     designation: Software Engineer Intern
     slug: s2e
-    description: Developped predictive AI model to better anticipate risky or safe period in banking environment.
+    description: Developped predictive AI model to better anticipate risky or safe period in banking environment according to website traffic.
     visibility: true
 
 author_education_details:
   - college_logo: imt.png
     college_name: IMT Atlantique
     college_url: https://www.imt-atlantique.fr/en
-    college_degree: Software Engineering
-    description: Master of Science
+    college_degree: MSc in Software Engineering
+    description: "relevant courses: Design Patterns, Recursion, Algorithmic, Service-oriented computing, Data Structures."
+    visibility: true
+    
+  - college_logo: iut.png
+    college_name: University of Nantes
+    college_url: https://iutnantes.univ-nantes.fr
+    college_degree: Undergraduate Degree in Electrical Engineering and Computer Science
+    description: University diploma. Studied Electrical Engineering, Electronics, Object Oriented Programming, Computer Science.
     visibility: true
 
-author_software_project_details:
-  - project_thumbnail: gamershub.png
-    project_slug: liyo-app
-    project_info: Personal
-    project_title: "Profile Picture Adviser"
-    project_description: Built a micro-services backend and mobile application using Kubernetes, Go, Dart and more.
-    project_url: https://github.com/evrard-nil/pic-rater
-    visibility: true
-  - project_thumbnail: programmingebooks.png
-    project_slug: weather-data-collection
-    project_info: Scholar
-    project_title: Weather data collector
-    project_description: Developped a weather data collector using Golang and an MQTT broker (publish-subscribe pattern).
-    project_url: https://github.com/Evrard-Nil/middleware
-    visibility: true
-  - project_thumbnail: programmingebooks.png
-    project_slug: note-taker
-    project_info: Personal
-    project_title: Note Taker
-    project_description: Developped a small mobile application allowing users to create notes using markdown.
-    project_url: https://programmingebooks.com
-    visibility: true
-  - project_thumbnail: programmingebooks.png
-    project_slug: green-it-study
-    project_info: Scholar
-    project_title: Green IT study
-    project_description: Studied how service design could impact ressource usage inside a micro-services environment.
-    project_url: https://programmingebooks.com
-    visibility: true
+# author_software_project_details:
+#   - project_thumbnail: gamershub.png
+#     project_slug: liyo-app
+#     project_info: Personal
+#     project_title: "Profile Picture Adviser"
+#     project_description: Built a micro-services backend and mobile application using Kubernetes, Go, Dart and more.<br> Used GCP and GKE to manage back-end cluster.
+#     project_url: https://github.com/evrard-nil/pic-rater
+#     visibility: true
+#   - project_thumbnail: programmingebooks.png
+#     project_slug: weather-data-collection
+#     project_info: Scholar
+#     project_title: Weather data collector
+#     project_description: Developped a weather data collector using Golang and an MQTT broker (publish-subscribe pattern).
+#     project_url: https://github.com/Evrard-Nil/middleware
+#     visibility: true
+#   # - project_thumbnail: programmingebooks.png
+#   #   project_slug: note-taker
+#   #   project_info: Personal
+#   #   project_title: Note Taker
+#   #   project_description: Developped a small mobile application allowing users to create notes using markdown.
+#   #   project_url: https://programmingebooks.com
+#   #   visibility: true
+#   - project_thumbnail: programmingebooks.png
+#     project_slug: green-it-study
+#     project_info: Scholar
+#     project_title: Green IT study
+#     project_description: Studied how service design could impact ressource usage, especially energy, inside a micro-services environment.
+#     project_url: https://programmingebooks.com
+#     visibility: true
+#   - project_thumbnail: programmingebooks.png
+#     project_slug: coding-competition
+#     project_info: Personal
+#     project_title: Coding Competition
+#     project_description: Took part to the BattleDev, a coding competition with more than 5000 participants.
+#     project_url: https://programmingebooks.com
+#     visibility: true
 
-author_add_expereience_details:
-  - project_thumbnail: programmingebooks.png
-    project_slug: mentorship
-    project_info: Personal
-    project_title: Mentorship
-    project_description: Taught first-year student students about Math, Physics, Mecanics or Computer Science.
-    project_url: https://programmingebooks.com
-    visibility: true
-  - project_thumbnail: programmingebooks.png
-    project_slug: scout-leader
-    project_info: Personal
-    project_title: Scout Leader
-    project_description: Lead a team of 6 to 8 scouts during 2 years. Organised, planned and budgeted activities.
-    project_url: https://programmingebooks.com
-    visibility: true
+# author_add_expereience_details:
+#   - project_thumbnail: programmingebooks.png
+#     project_slug: student-office
+#     project_info: Personal
+#     project_title: Mentorship
+#     project_description: Created and managed the student office.Organised, planned, budgetedevents with a team of 12 students.
+#     project_url: https://programmingebooks.com
+#     visibility: true
+#   - project_thumbnail: mentorship.jpg
+#     project_slug: mentorship
+#     project_info: Personal
+#     project_title: Mentorship
+#     project_description: Improved the study methods and grades of 6 undergraduate students.
+#     project_url: https://programmingebooks.com
+#     visibility: true
+#   - project_thumbnail: scout.jpg
+#     project_slug: scout-leader
+#     project_info: Personal
+#     project_title: Scout Leader
+#     project_description: Lead a team of 6 to 8 scouts during 2 years. Organised, planned and budgeted activities.
+#     project_url: https://programmingebooks.com
+#     visibility: true
 
 github_username: evrard-nil
 linkedin_username: endaillet
@@ -107,9 +128,24 @@ permalink: pretty
 # google analytics
 # google_analytics: UA-46783401-10
 
+##############################
+# Dynamic Text on the Header #
+##############################
+
+dynamic-typing: True
+shuffle: False # Shuffle the lines.
+loop: True
+loop-count: False # Set False for infinite loop, or set any number for finite loop.
+type-speed: 10
+start-delay: 200
+delete-delay: 2000
+lines: # You can add HTML Tags in the Text
+  - text: "Evrard-Nil Daillet"
+  - text: "Software Engineer"
+
 show_author_work_experiences: true
 show_author_education_details: true
-show_author_project_details: true
+show_author_project_details: false
 
 plugins:
   - jekyll-paginate
