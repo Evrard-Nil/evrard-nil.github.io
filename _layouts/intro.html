@@ -1,0 +1,50 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en " }}">
+
+{%- include head.html -%}
+
+<body background="https://images.unsplash.com/photo-1506918357967-b358ad447c56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80">
+  {%- include intro.html -%}
+
+</body>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="{{site.baseurl}}/js/typed.min.js">
+</script>
+<script type="text/javascript">
+  var myQuotes = new Array();
+  {% for line in site.lines %}
+  myQuotes.push("{{ line.text }}");
+  {% endfor %}
+  function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+      // And swap it with the current element.
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+    return array;
+  }
+  {% if site.shuffle %}
+  shuffle(myQuotes)
+  {% endif %}
+  $(".intro-text").typed({
+    strings: myQuotes,
+    typeSpeed: {{ site.type-speed }},
+    backDelay: {{ site.delete-delay }},
+    startDelay: {{ site.start-delay }},
+    loop: {{ site.loop }},
+    loopCount: {{ site.loop-count }},
+    cursorChar: "|"
+    });
+</script>
+
+</html>
