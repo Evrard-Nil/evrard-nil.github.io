@@ -6,22 +6,51 @@ body {
     background-repeat: no-repeat; 
     background-size: cover; 
 }
+
 .home-body {
     margin: auto;
-    position: absolute;
-    top: 30%;
-    left: 30%;
-    display: inline-flex;
-    vertical-align: middle;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 100%;
+    transform: translate(-50%, -50%);
 }
+
+@media (min-width: 850px) {
+  .home-body {
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 185px;
+    display: inline-flex; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+@media (max-width: 850px) {
 .intro-profile-img {
-    width: 220px;
+    position: fixed;
+    top: 15%;
+    left: 46%;
+    transform: translate(-50%, 0%);
     margin-left: 20px;
 }
 
 .intro-more{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+}
+.intro-profile-img {
+    width: 220px;
+}
+
+.intro-more{ 
     margin-top: 40px;
-    vertical-align: bottom;
 }
 
 .typed-cursor {
