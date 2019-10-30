@@ -1,0 +1,34 @@
+{
+  "map": {
+    "numberOfColumn": 4,
+    "cases": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "starsIndex": [
+      7
+    ],
+    "cursorIndex": [
+      5
+    ]
+  },
+  "functions": [
+    "forward",
+    "left",
+    "right",
+    "f0"
+  ],
+  "userControls": [
+    4
+  ]
+}
