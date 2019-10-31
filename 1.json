@@ -1,6 +1,6 @@
 {
   "map": {
-    "numberOfColumn": 5,
+    "numberOfColumn": 6,
     "cases": [
       0,
       0,
@@ -8,10 +8,13 @@
       0,
       0,
       0,
+      0,
       1,
       1,
       1,
       1,
+      0,
+      0,
       0,
       0,
       0,
@@ -21,7 +24,7 @@
     "starsIndex": [
       7
     ],
-    "cursorIndex": 5,
+    "cursorIndex": 6,
     "cursorDir": "EAST"
   },
   "controls": [
