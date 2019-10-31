@@ -18,7 +18,8 @@
     "starsIndex": [
       7
     ],
-    "cursorIndex": 5
+    "cursorIndex": 5,
+    "cursorDir": "EAST"
   },
   "controls": [
     "forward",
