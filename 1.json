@@ -1,15 +1,19 @@
 {
   "map": {
-    "numberOfColumn": 4,
+    "numberOfColumn": 45,
     "cases": [
       0,
       0,
       0,
       0,
+      0,
+      0,
       1,
       1,
       1,
       1,
+      0,
+      0,
       0,
       0,
       0,
