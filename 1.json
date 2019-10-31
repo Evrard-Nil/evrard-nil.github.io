@@ -22,13 +22,13 @@
       5
     ]
   },
-  "functions": [
+  "controls": [
     "forward",
     "left",
     "right",
     "f0"
   ],
-  "userControls": [
+  "functions": [
     4
   ]
 }
